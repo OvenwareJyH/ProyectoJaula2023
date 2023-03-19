@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 13, 2022, 7:19:10 AM
+    Author     : alumno
+*/
+@import url("https://fonts.googleapis.com/css?family=Secular+One");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Ruda");
+
+body{
+    background-color: #FFE8D6;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: Open Sans;
+    text-align: center;
+}
+table{
+    align-content: center;
+}
+h1{
+    font-family: Secular One;
+    font-size: 64px;
+    color: #9F4307
+}
+p{
+    font-size: 18px;
+}
+label{
+    text-align: left;
+}
+div{
+    width: 40%;
+    display: block;
+    margin: auto
+}
+.div1{
+    width: 55%;
+    display: block;
+    margin: auto
+}
+input{
+    width: 300px;
+    height: 35px;
+    background-color: #F8F0F0;
+    border-style: solid;
+    border-color: #BE4B00;
+    border-width: 2px;
+    border-radius: 30px;
+    padding-left: 15px;
+}
+.input2{
+    width: 260px;
+    height: 35px;
+    background-color: #F8F0F0;
+    border-style: solid;
+    border-color: #BE4B00;
+    border-width: 2px;
+    border-radius: 30px;
+    padding-left: 15px;
+}
+button{
+    width: 190px;
+    height: 45px;
+    color: white;
+    font-size: 18px; 
+    font-family: Ruda;
+    padding-left: 5px;
+    padding-right: 5px; 
+    background-color: #9F4307;
+    border-style: solid;
+    border-color: #9F4307;
+    border-width: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+a:link{
+    color: #BE4B00
+}
+a:visited{
+    color: #be3900;
+}
+a:hover{
+    color: #ffa136;
+    text-decoration: underline  
+}
+.mostrar{
+    background-color: #CCCBE1; 
+    border-color: #CCCBE1; 
+    border-radius: 15px; 
+    padding-left: 10px; 
+    height: 40px; 
+    width:40px; 
+    border-style: solid;
+}

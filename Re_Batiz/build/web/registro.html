@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro | Re-Bátiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/index.css" rel="stylesheet" type="text/css"/>
+        <script>
+            function validarCorreo(){
+                mail = document.getElementById("textCorreo");
+                contra = document.getElementById("textContra");
+                
+                var emailCorrecto=  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+                
+                if (emailCorrecto.test(mail.value)){
+                    return true;
+                }
+                else{
+                    alert("Correo no válido");
+                    return false;
+                }
+            }
+            
+        function mostrarContrasena(){
+            var tipo = document.getElementById("textContra");
+            if(tipo.type === "password"){
+                tipo.type = "text";
+            }else{
+                tipo.type = "password";
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <img src="img/detalles fondo.png" alt=" " height="400" style="float: left; opacity: 0.45">
+        <br><br>
+        <form name="datosUsuario" method="post" action="registrarUsr.jsp">
+        <div>
+            <h1>Re-Bátiz</h1>
+        </div>
+            <div>
+            <table align="center">
+                <tr><td><label ><i>Correo:</i></label></td>
+                    <td>      </td>
+                    <td><label><i>Nombre de usuario:</i></label></td></tr>
+                <tr><td><input id="textCorreo" name="textCorreo" type="text" required="required" align="center"/></td>
+                    <td><br><br></td>
+                    <td><input id="textUsr" name="textUsr" type="text" required="required" align="center"></td></tr>
+                <tr><td><br></td>
+                    <td></td>
+                    <td></td></tr>
+                <tr><td><label><i>Contraseña:</i></label></td>
+                    <td>      </td>
+                    <td><label><i>Edad:</i></label></td>
+                </tr>
+                <tr><td><input id="textContra" style="width: 245px" name="textContra" type="password" required="required" align="left"/>
+                        <button type="button" onclick="mostrarContrasena()" style="background-color: transparent; border-color: #FFE8D6; border-radius: 15px; padding-left: 10px; height: 40px; width:40px; border-style: solid;">
+                        <img src="img\ojito.png" width="30" height="30" alt="ojo" align="center"/></button>
+                    </td>
+                    <td>      </td>
+                    <td><input id="textEdad" name="textEdad" type="text" required="required" align="center"></td>
+                </tr>
+            </table>
+            </div>
+        <br>
+            <img src="img/detalles fondo 2.png" alt=" " height="400" style="float: right; opacity: 0.5">
+            <br>
+        <div>
+            <button type="submit" name="registro" id="registro" onclick="return validarCorreo()">Registrarse</button>
+            <p>O si ya tienes cuenta, <a href="index.html">inicia sesión</a></p>
+        </div>
+        </form>
+    </body>
+</html>

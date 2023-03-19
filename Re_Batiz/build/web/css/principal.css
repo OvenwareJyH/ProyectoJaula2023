@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 oct. 2022, 23:58:54
+    Author     : JorgeEsteban
+*/
+@import url("https://fonts.googleapis.com/css?family=Secular+One");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Ruda");
+
+body{
+    background-color: #FFE8D6;
+    padding: 0px;
+}
+
+.div1{
+    background-color: #9F4307;
+    padding: 0px;
+}
+.titulo{
+    font-family: Secular One;
+}
+.navbar-custom .navbar-text{
+    color: white
+}
+#navbar-brand{
+    color: white;
+}
+.tablita{
+    border-spacing: 10px; font-size-adjust: 20;
+}
+#a1:link{
+    color: #BE4B00
+}
+#a1:visited{
+    color: #be3900;
+}
+#a1:hover{
+    color: #ffa136;
+    text-decoration: underline
+}
